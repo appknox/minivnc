@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
  * index.js
  * Copyright (C) 2016 dhilipsiva <dhilipsiva@gmail.com>
@@ -34,11 +35,11 @@ wss.on('connection', function(ws) {
 			*/
 			stream = net.connect({
 				// port: port
-				port: 30024
+				port: 30025
 			})
 			touchStream = net.connect({
 				// port: port
-				port: 31024
+				port: 31025
 			})
 
 			stream.on('error', function() {
@@ -184,8 +185,8 @@ wss.on('connection', function(ws) {
 			stream.on('readable', tryRead)
 			ws.on('close', function() {
 				console.info('Lost a client')
-				stream.end()
-				touchStream.end()
+				// stream.end()
+				// touchStream.end()
 			})
 		}
 		else if (jsonData.type === 'pointer'){
