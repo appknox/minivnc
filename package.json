@@ -1,0 +1,23 @@
+{
+  "name": "minivnc",
+  "version": "0.1.0",
+  "description": "A minitouch & minicap proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/appknox/minivnc.git"
+  },
+  "keywords": [
+    "minivnc",
+    "appknox"
+  ],
+  "author": "dhilipsiva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appknox/minivnc/issues"
+  },
+  "homepage": "https://github.com/appknox/minivnc#readme"
+}
