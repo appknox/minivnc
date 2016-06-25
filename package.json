@@ -1,7 +1,7 @@
 {
   "name": "minivnc",
   "version": "0.1.0",
-  "description": "A minitouch & minicap proxy",
+  "description": "A teeny, tiny VNC proxy",
   "main": "index.js",
   "scripts": {
     "test": "test"
