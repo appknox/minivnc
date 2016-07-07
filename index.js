@@ -17,6 +17,10 @@ var WebSocketServer = require('ws').Server
     server: server
   });
 
+console.log("Started MiniVNC");
+console.log("VNC_SECRET: " + VNC_SECRET);
+console.log("PORT: " + PORT);
+
 var messageHandler = function (ws, data, stream, touchStream, streamsCreatedCallback) {
   var jsonData = JSON.parse(data);
   if (jsonData.type === "subscribe") {
