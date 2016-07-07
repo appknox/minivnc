@@ -1,30 +1,30 @@
 {
-	"name": "minivnc",
-	"version": "0.1.0",
-	"description": "A teeny, tiny VNC proxy",
-	"main": "index.js",
-	"scripts": {
-		"test": "test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/appknox/minivnc.git"
-	},
-	"keywords": [
-		"minivnc",
-		"appknox"
+  "name": "minivnc",
+  "version": "0.1.0",
+  "description": "A teeny, tiny VNC proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/appknox/minivnc.git"
+  },
+  "keywords": [
+    "minivnc",
+    "appknox"
   ],
   "homepage": "https://github.com/appknox/minivnc#readme",
   "author": "dhilipsiva",
   "license": "MIT",
-   "bin": {
+  "bin": {
     "minivnc": "index.js"
   },
   "bugs": {
-	  "url": "https://github.com/appknox/minivnc/issues"
+    "url": "https://github.com/appknox/minivnc/issues"
   },
   "dependencies": {
-	  "ws": "^0.7.1"
+    "request": "^2.72.0",
+    "ws": "^0.7.1"
   }
-
 }
