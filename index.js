@@ -181,7 +181,7 @@ var messageHandler = function (ws, data, stream, touchStream, streamsCreatedCall
           }
         })
       } else {
-        console.log("Got an error: ", error, ", status code: ", response.statusCode)
+        console.log("Got an error: ", error);
         ws.close();
       }
     })
