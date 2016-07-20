@@ -12,7 +12,7 @@ var WebSocketServer = require('ws').Server
   , request = require('request')
   , VNC_SECRET = process.env.VNC_SECRET || "bqB95W.1)A58|f-|3h_vJkK8L"
   , PORT = process.env.PORT || 8008
-  , DEVICES_POERT = process.env.DEVICES_PORT || 8000
+  , DEVICES_PORT = process.env.DEVICES_PORT || 8000
   , server = http.createServer()
   , wss = new WebSocketServer({
     server: server
@@ -25,7 +25,7 @@ console.log("PORT: " + PORT);
 var messageHandler = function (ws, data, stream, touchStream, streamsCreatedCallback) {
   var jsonData = JSON.parse(data);
   if (jsonData.type === "subscribe") {
-    url = 'http://localhost:/api/miniports?token=' + jsonData.token + '&secret=' + VNC_SECRET
+    url = 'http://localhost:'+ DEVICES_PORT +'/api/miniports?token=' + jsonData.token + '&secret=' + VNC_SECRET
     request(url, function(error, response, body){
       if (!error && response.statusCode === 200) {
         const miniports = JSON.parse(body)
